@@ -13,11 +13,7 @@ app.use(cors({
   methods: ["GET", "POST", "PATCH", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 }));
-
-// Middleware для парсинга JSON
 app.use(express.json());
-
-// Middleware для логирования запросов
 app.use((req, res, next) => {
     res.on('finish', () => {
         console.log(`[${new Date().toISOString()}] [${req.method}] ${res.statusCode} ${req.path}`);
