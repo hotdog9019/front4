@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заметки (13-18)</title>
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <style>
+        body { max-width: 640px; margin: 0 auto; padding: 1rem; }
+        #offline-banner {
+            display: none;
+            background: #f0ad4e;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        #offline-banner.visible { display: block; }
+        #notes-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Заметки — офлайн-приложение</h1>
+
+    <div id="offline-banner">Офлайн-режим: изменения сохраняются локально</div>
+
+    <form id="note-form" class="row">
+        <input class="col-9" type="text" id="note-input" placeholder="Введите заметку" required>
+        <button class="col-3 button primary" type="submit">Добавить</button>
+    </form>
+
+    <ul id="notes-list"></ul>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
