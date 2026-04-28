@@ -1,0 +1,22 @@
+{
+  "name": "pr22-load-balancing-demo",
+  "version": "1.0.0",
+  "description": "Практика 22: демонстрация балансировки нагрузки через Nginx и HAProxy",
+  "main": "backend/server.js",
+  "scripts": {
+    "start:backend1": "node backend/server.js 3000 backend-1",
+    "start:backend2": "node backend/server.js 3001 backend-2",
+    "start:backup": "node backend/server.js 3002 backend-backup"
+  },
+  "keywords": [
+    "express",
+    "nginx",
+    "haproxy",
+    "load-balancing",
+    "practice"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

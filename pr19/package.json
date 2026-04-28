@@ -1,0 +1,25 @@
+{
+  "name": "pr19-postgres-users-api",
+  "version": "1.0.0",
+  "description": "Практика 19: CRUD API пользователей на Express + PostgreSQL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "express",
+    "postgresql",
+    "pg",
+    "practice"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
